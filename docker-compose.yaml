@@ -19,7 +19,7 @@ services:
       - LENPASTE_ADMIN_MAIL=admin@gmail.com   # Email of the administrator of this server.
       - LENPASTE_UI_DEFAULT_LIFETIME=         # Lifetime of paste will be set by default in WEB interface. Examples: 10min, 1h, 1d, 2w, 6mon, 1y.
     volumes:
-      - ./lenpaste_data:/data
+      - ./data:/data
       - /etc/timezone:/etc/timezone:ro
       - /etc/localtime:/etc/localtime:ro
     ports:
